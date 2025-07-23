@@ -1,59 +1,67 @@
-# ProductPage
+## Table of contents
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+- [Overview](#overview)
 
-## Development server
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 
-To start a local development server, run:
+- [Author](#author)
 
-```bash
-ng serve
-```
+## Overview
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- This is an e-commerce product page. user can add to cart shoe based on their choice clicking on the add to cart button after selecting desire number of shoe
 
-## Code scaffolding
+### The challenge
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Users should be able to:
 
-```bash
-ng generate component component-name
-```
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Open a lightbox gallery by clicking on the large product image
+- Switch the large product image by clicking on the small thumbnail images
+- Add items to the cart
+- View the cart and remove items from it
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Screenshot
 
-```bash
-ng generate --help
-```
+![](images/e-commerce-ss.png)
 
-## Building
+### Links
 
-To build the project run:
+- Solution URL: [solution here]()
+- Live Site URL: [ live site here]()
 
-```bash
-ng build
-```
+### Built with
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Angular
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Typescript
+- Mobile-first workflow
 
-## Running unit tests
+### What I learned
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+I decided to go for this project mainly as Angular practice. It helped me solidify what I already knew but I also learned a lot of stuff.
 
-```bash
-ng test
-```
+I learned how to dynamically handle different views to conditionally display entire sections like mobile menu, lightbox gallery or overlay.
 
-## Running end-to-end tests
+I learned how to close modals by clicking outside the modal in Angular (invisible overlay)
 
-For end-to-end (e2e) testing, run:
+I learned how to dynamically handle slider fully created in proper Angular without any JS code, which wasn't nearly as hard as I thought it might be.
 
-```bash
-ng e2e
-```
+### Continued development
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+I will keep focusing on Angular, practicing it, but also slowly incorporating more complex functionalities as well as learning ciompletely new concepts
 
-## Additional Resources
+## Author
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- GitHub - [DanoSvK](https://github.com/DanoSvK)
+- Frontend Mentor - [DanoSvK](https://www.frontendmentor.io/profile/DanoSvK)
+- Linked In - [Daniel Kopáč](https://www.linkedin.com/in/daniel-kopac-7aa941223/)

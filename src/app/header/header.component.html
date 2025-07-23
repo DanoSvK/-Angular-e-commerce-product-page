@@ -1,0 +1,77 @@
+@if(isMobileMenuOpen()) {
+<div class="overlay" (click)="onCloseModal()"></div>
+
+<section class="menu-modal">
+  <img
+    src="/icon-close.svg"
+    alt=""
+    class="close-icon"
+    (click)="onCloseModal()"
+  />
+  <ul>
+    <li>Collections</li>
+    <li>Men</li>
+    <li>Women</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+</section>
+} @if(isCartOpen()) {
+<div class="invisible-overlay" (click)="onCloseModal()"></div>
+}
+<header>
+  @if(isCartOpen()) {
+  <div class="cart-modal-wrapper">
+    <app-cart-modal></app-cart-modal>
+  </div>
+  } @if(isMobile()) {
+  <div class="menu">
+    <img
+      class="menu-icon"
+      src="/icon-menu.svg"
+      alt=""
+      (click)="onClickMobileMenu()"
+    />
+    <a href="#">
+      <img class="logo-icon" src="/logo.svg" alt="" />
+    </a>
+  </div>
+  <div class="avatar">
+    <div class="cart-wrapper" (click)="onClickCart()">
+      <div class="cart-icon-wrapper">
+        <img class="cart-icon" src="/icon-cart.svg" alt="" />
+        @if(productInCartCount() > 0) {
+        <p class="highlighted-count">{{ productInCartCount() }}</p>
+        }
+      </div>
+    </div>
+    <img class="avatar-icon" src="/image-avatar.png" alt="" />
+  </div>
+
+  } @else {
+
+  <div class="menu">
+    <a href="#">
+      <img class="logo-icon" src="/logo.svg" alt="" />
+    </a>
+    <ul>
+      <li>Collections</li>
+      <li>Men</li>
+      <li>Women</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  <div class="avatar">
+    <div class="cart-wrapper" (click)="onClickCart()">
+      <div class="cart-icon-wrapper">
+        <img class="cart-icon" src="/icon-cart.svg" alt="" />
+        @if(productInCartCount() > 0) {
+        <p class="highlighted-count">{{ productInCartCount() }}</p>
+        }
+      </div>
+    </div>
+    <img class="avatar-icon" src="/image-avatar.png" alt="" />
+  </div>
+  }
+</header>

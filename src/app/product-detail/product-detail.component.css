@@ -1,0 +1,150 @@
+.product-detail {
+  padding: 0 1.5rem 5.5rem;
+}
+
+.brand {
+  font-size: 0.75rem;
+  color: var(--orange);
+  padding: 1.5rem 0 19px;
+  font-weight: bold;
+}
+
+.product-title {
+  font-size: 1.75rem;
+  line-height: 32px;
+  font-weight: bold;
+  padding-bottom: 0.9375rem;
+}
+
+.description {
+  font-size: 0.9375rem;
+  line-height: 25px;
+  color: var(--dark-grayish-blue);
+  padding-bottom: 1.5rem;
+}
+
+.price-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  align-items: center;
+}
+
+.price-info__flex {
+  display: flex;
+  gap: 1.4375rem;
+}
+
+.current-price {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.discount {
+  font-weight: bold;
+  color: var(--orange);
+  background-color: var(--pale-orange);
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.original-price {
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: var(--grayish-blue);
+  font-weight: bold;
+}
+
+.count {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--light-grayish-blue);
+  padding: 1.375rem 1.5rem 1.125rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.icon-plus,
+.icon-minus {
+  align-self: center;
+  cursor: pointer;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  text-align: center;
+  background-color: var(--orange);
+  padding: 1.125rem 0;
+  border-radius: 10px;
+  color: var(--white);
+  cursor: pointer;
+  box-shadow: 0px 20px 50px -20px var(--orange);
+}
+
+.add-to-cart-btn p {
+  display: inline;
+  margin-left: 0.4856rem;
+}
+
+.add-to-cart-btn svg {
+  margin-right: 0.4856rem;
+}
+
+.product-detail {
+  max-width: 445px;
+  margin: 0 auto;
+}
+
+@media (min-width: 720px) {
+  .product-detail {
+    width: 445px;
+    padding: 0;
+    flex: 1;
+  }
+  .add-product-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 56px;
+  }
+
+  .add-to-cart-btn {
+    width: 17rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .add-to-cart-btn:hover {
+    opacity: 0.5;
+  }
+
+  .icon-minus:hover,
+  .icon-plus:hover {
+    opacity: 0.5;
+  }
+
+  .price-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
+
+  .count {
+    display: flex;
+    align-items: center;
+    width: 157px;
+    padding: 0 1rem;
+    margin: 0;
+  }
+
+  .product-title {
+    line-height: 48px;
+    font-size: 2.75rem;
+  }
+
+  .description {
+    line-height: 26px;
+    font-size: 1rem;
+  }
+}

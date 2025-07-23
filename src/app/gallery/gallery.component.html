@@ -1,0 +1,41 @@
+<section>
+  <div class="hero-wrapper" (click)="!isMobile() && onLightboxOpen()">
+    <img
+      src="/image-product-{{ thumbnailImageClicked() + 1 }}.jpg"
+      alt=""
+      class="hero"
+    />
+    <!-- Showing arrows dynamically on mobile view only -->
+    @if(isMobile()) {
+    <div
+      class="arrow-wrapper arrow-left-wrapper"
+      (click)="onArrowClick('prev', thumbnailImageClicked)"
+    >
+      <img src="/icon-previous.svg" alt="" class="arrow-img" />
+    </div>
+    <div
+      class="arrow-wrapper arrow-right-wrapper"
+      (click)="onArrowClick('next', thumbnailImageClicked)"
+    >
+      <img src="/icon-next.svg" alt="" class="arrow-img" />
+    </div>
+    }
+  </div>
+  <!-- Showing thumbnails dynamically on desktop view only -->
+  @if(!isMobile()) {
+  <section class="thumbnail-gallery">
+    @for(image of productData(); track $index) {
+    <img
+      src="/{{ image.thumbnailSrc }}"
+      alt="{{ image.alt }}"
+      (click)="onThumbnailSelect($index)"
+      [class.active]="thumbnailImageClicked() === $index"
+    />
+    }
+  </section>
+  }
+</section>
+<!-- Allowing lighbox gallery to be opened only on desktop view only -->
+@if(!isMobile() && isLightboxClicked()){
+<app-lightbox></app-lightbox>
+}

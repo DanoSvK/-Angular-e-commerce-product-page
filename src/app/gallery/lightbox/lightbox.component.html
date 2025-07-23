@@ -1,0 +1,53 @@
+<div class="overlay" (click)="onLightboxClose()"></div>
+<section class="lightbox">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="15"
+    class="close-btn"
+    (click)="onLightboxClose()"
+  >
+    <path
+      d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+      fill="#69707D"
+      fill-rule="evenodd"
+    />
+  </svg>
+  <div class="hero-wrapper">
+    <img
+      src="/{{ productData()[lightboxThumbnailImageClicked()].heroSrc }}"
+      alt=""
+      class="hero"
+    />
+    <div
+      class="arrow-wrapper lightbox__arrow-left-wrapper"
+      (click)="onArrowClick('prev', lightboxThumbnailImageClicked)"
+    >
+      <img
+        src="/icon-previous.svg"
+        alt=""
+        class="arrow-img lightbox__arrow-left"
+      />
+    </div>
+    <div
+      class="arrow-wrapper lightbox__arrow-right-wrapper"
+      (click)="onArrowClick('next', lightboxThumbnailImageClicked)"
+    >
+      <img
+        src="/icon-next.svg"
+        alt=""
+        class="arrow-img lightbox__arrow-right"
+      />
+    </div>
+  </div>
+  <section class="lightbox__thumbnail-gallery">
+    @for(image of productData(); track $index) {
+    <img
+      src="/{{ image.thumbnailSrc }}"
+      alt="{{ image.alt }}"
+      (click)="onLightboxThumbnailSelect($index)"
+      [class.lightbox-active]="lightboxThumbnailImageClicked() === $index"
+    />
+    }
+  </section>
+</section>

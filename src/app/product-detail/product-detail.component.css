@@ -147,4 +147,8 @@
     line-height: 26px;
     font-size: 1rem;
   }
+
+  .add-to-cart-btn {
+    box-shadow: none;
+  }
 }

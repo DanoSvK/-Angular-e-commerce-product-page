@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution here]([https://e-shop-product-page.netlify.app/](https://github.com/DanoSvK/-Angular-e-commerce-product-page))
-- Live Site URL: [ live site here](https://e-shop-product-page.netlify.app/)
+- Solution URL: [solution here](https://e-shop-product-page.netlify.app/](https://github.com/DanoSvK/-Angular-e-commerce-product-page)
+- Live Site URL: [live site here](https://e-shop-product-page.netlify.app/)
 
 ### Built with
 

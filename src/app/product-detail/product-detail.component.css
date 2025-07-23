@@ -5,7 +5,7 @@
 .brand {
   font-size: 0.75rem;
   color: var(--orange);
-  padding: 1.5rem 0 19px;
+  padding: 1.5rem 0 1.1875rem;
   font-weight: bold;
 }
 
@@ -44,7 +44,7 @@
   font-weight: bold;
   color: var(--orange);
   background-color: var(--pale-orange);
-  padding: 5px;
+  padding: 0.3125rem;
   border-radius: 6px;
 }
 
@@ -92,21 +92,20 @@
 }
 
 .product-detail {
-  max-width: 445px;
+  max-width: 27.8125rem;
   margin: 0 auto;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 45rem) {
   .product-detail {
-    width: 445px;
     padding: 0;
     flex: 1;
   }
   .add-product-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-    height: 56px;
+    gap: 0.625rem;
+    height: 3.5rem;
   }
 
   .add-to-cart-btn {
@@ -127,13 +126,13 @@
   .price-info {
     flex-direction: column;
     align-items: flex-start;
-    gap: 3px;
+    gap: 0.1875rem;
   }
 
   .count {
     display: flex;
     align-items: center;
-    width: 157px;
+    width: 9.8125rem;
     padding: 0 1rem;
     margin: 0;
   }

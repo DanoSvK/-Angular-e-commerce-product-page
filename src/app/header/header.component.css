@@ -8,7 +8,7 @@
 }
 
 .menu-modal {
-  width: 250px;
+  width: 15.625rem;
   position: fixed;
   z-index: 2;
   background-color: var(--white);
@@ -27,7 +27,7 @@ ul {
 }
 
 li {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 header {
@@ -35,7 +35,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1110px;
+  max-width: 69.375rem;
   padding: 1.1875rem 1.5rem;
 }
 
@@ -53,12 +53,11 @@ header {
 
 .highlighted-count {
   position: absolute;
-  top: 0;
   right: 0;
   top: -0.4rem;
   right: -0.6rem;
-  width: 19px;
-  height: 13px;
+  width: 1.1875rem;
+  height: 0.8125rem;
   font-size: 0.625rem;
   background-color: var(--orange);
   color: var(--white);
@@ -109,7 +108,7 @@ header {
   transform: translateX(50%);
 }
 
-@media (min-width: 680px) {
+@media (min-width: 42.5rem) {
   ul {
     display: flex;
     flex-direction: row;
@@ -143,13 +142,13 @@ header {
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 45rem) {
   header {
     padding: 0 1.5rem;
   }
 
   .menu {
-    padding-top: 41px;
+    padding-top: 2.5625rem;
   }
   .cart-wrapper {
     align-self: center;
@@ -174,7 +173,7 @@ header {
   }
 }
 
-@media (min-width: 1230px) {
+@media (min-width: 76.875rem) {
   .cart-modal-wrapper {
     right: -3rem;
   }

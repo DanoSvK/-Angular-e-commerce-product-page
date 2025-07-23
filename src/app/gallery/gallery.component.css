@@ -54,13 +54,9 @@ img {
   opacity: 0.5;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 45rem) {
   .hero {
-    min-width: 330px;
-  }
-
-  .gallery {
-    width: 445px !important;
+    min-width: 20.625rem;
   }
 
   .thumbnail-gallery img:hover {

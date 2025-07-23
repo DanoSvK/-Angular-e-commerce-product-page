@@ -1,22 +1,26 @@
-@media (min-width: 720px) {
+@media (min-width: 45rem) {
   main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
-    max-width: 1015px;
+    max-width: 63.4375rem;
     margin: 0 auto;
     padding: 0 1.5rem;
     gap: 2rem;
   }
+
+  .gallery {
+    width: 27.8125rem;
+  }
 }
 
-@media (min-width: 840px) {
+@media (min-width: 52.5rem) {
   main {
     gap: 4rem;
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 68.75rem) {
   main {
     gap: 7.8125rem;
   }

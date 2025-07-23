@@ -1,4 +1,6 @@
 .product-detail {
+  max-width: 27.8125rem;
+  margin: 0 auto;
   padding: 0 1.5rem 5.5rem;
 }
 
@@ -91,11 +93,6 @@
   margin-right: 0.4856rem;
 }
 
-.product-detail {
-  max-width: 27.8125rem;
-  margin: 0 auto;
-}
-
 @media (min-width: 45rem) {
   .product-detail {
     padding: 0;
@@ -113,7 +110,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: none;
   }
+
   .add-to-cart-btn:hover {
     opacity: 0.5;
   }
@@ -145,9 +144,5 @@
   .description {
     line-height: 26px;
     font-size: 1rem;
-  }
-
-  .add-to-cart-btn {
-    box-shadow: none;
   }
 }
